@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3 </title>
+</head>
+<body>
+   <h1>Data de nascimento e idade</h1> 
+   <p>Digite seu nome:</p><span id="nome1"></span>
+   <p>Dite sua data de nascimento:</p><span id="data1"></span>
+   <p>Digite seu nome:</p><span id="nome2"></span>
+   <p>Dite sua data de nascimento:</p><span id="data2"></span>
+    
+   <script>
+    let nome1
+    let data1
+    let nome2
+    let data2 
+   // let novo
+     
+    nome1 = (prompt("Digite seu nome"));
+    data1 = (prompt("Digite sua data de nascimento"));
+
+    nome2 = (prompt("Digite seu nome"));
+    data2 = Number(prompt("Digite sua data de nascimento"));
+  
+    
+  
+
+    document.getElementById('nome1').innerHTML = nome1;
+    document.getElementById('data1').innerHTML = data1;
+    document.getElementById('nome2').innerHTML = nome2;
+    document.getElementById('data2').innerHTML = data2;
+
+
+
+  </script>
+
+
+
+
+
+
+
+</body>
+</html>

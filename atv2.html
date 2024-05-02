@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2 | Peso </title>
+</head>
+<body>
+    
+     <h1>Digite seu nome e seu peso</h1>
+     <p>Pessoa1 Digite seu nome:</p><span id="nome1"></span>
+     <p>Pessoa1 Digite sua idade:</p><span id="idade1"></span>
+     <p>Pessoa1 Digite seu peso</p><span id="peso1"></span>
+     <p>Pessoa2 Digite seu nome:</p><span id="nome2"></span>
+     <p>Pessoa2 Digite sua idade:</p><span id="idade2"></span>
+     <p>Pessoa2 Digite seu peso</p><span id="peso2"></span>
+     <p>Peso total</p><span id="pesototal""></span>
+
+     <script>
+         let nome1
+         let idade1
+         let peso1
+         let nome2
+         let idade2
+         let peso2
+         let pesototal
+         
+         nome1 = (prompt("Digite seu nome"));
+         idade1 = Number(prompt("Digite sua idade"));
+         peso1 = Number(prompt("Digite seu peso"));
+
+         nome2 = (prompt("Digite seu nome"));
+         idade2 = Number(prompt("Digite sua idade"));
+         peso2 = Number(prompt("Digite seu peso"));
+
+         if (peso1 > peso2) {
+            pesototal = "Você está obeso"
+         }
+
+         if (peso2 > peso1) {
+          pesototal =  "Você está obeso"
+         }
+
+    document.getElementById('nome1').innerHTML = nome1;
+    document.getElementById('idade1').innerHTML = idade1;
+    document.getElementById('peso1').innerHTML = peso1;
+    document.getElementById('nome2').innerHTML = nome2;
+    document.getElementById('idade2').innerHTML = idade2;
+    document.getElementById('peso2').innerHTML = peso2;
+    document.getElementById('pesototal').innerHTML = pesototal;
+
+
+     </script>
+
+
+</body>
+</html>
